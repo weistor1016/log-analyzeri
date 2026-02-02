@@ -1,5 +1,6 @@
 import uuid
 import time
+import os
 
 from fastapi import FastAPI, Request
 from starlette.middleware.base import BaseHTTPMiddleware
@@ -8,10 +9,19 @@ from app.core.config import settings
 from app.core.logging import setup_logging, logger
 from app.api.logs import router as logs_router
 from app.core.errors import global_exception_handler
+from app.api.log_query import router as query_logs_router
 
 app = FastAPI(title=settings.app_name)
+
+# include the routers
 app.include_router(logs_router)
+app.include_router(query_logs_router)
+
+# add the handler
 app.add_exception_handler(Exception, global_exception_handler)
+
+# make the directory if it does not exist
+os.makedirs("logs", exist_ok=True)
 setup_logging(settings.log_level)
 
 class RequestIDMiddleware(BaseHTTPMiddleware):

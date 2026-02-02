@@ -1,0 +1,18 @@
+{"request_id": "c6b0350f-4bf6-4539-ba1b-4aa34c504648", "path": "/logs", "method": "POST", "status_code": 307, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T22:47:12.164082Z", "level": "info"}
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-02T22:47:12.167081Z"}
+{"request_id": "7fddcb55-7c5d-44b9-9449-a2c8a4f88f17", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T22:47:12.167081Z", "level": "info"}
+{"request_id": "72345bd8-706b-45dc-bb23-4b2d9e7b35e9", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T22:47:48.975021Z", "level": "info"}
+{"request_id": "4b38a905-3faa-482f-990e-a604ceed6844", "path": "/logs/", "method": "GET", "status_code": 405, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T22:47:48.979017Z", "level": "info"}
+{"request_id": "fed0df4b-dce4-4e96-8b54-9904d7046540", "path": "/favicon.ico", "method": "GET", "status_code": 404, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T22:47:49.000011Z", "level": "info"}
+{"request_id": "112690f7-0ca2-452f-b9bc-bc193478c81b", "path": "/logs", "method": "POST", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T22:49:08.487364Z", "level": "info"}
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-02T22:49:08.488365Z"}
+{"request_id": "d481f3c5-9343-4a35-899e-d622be171e17", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T22:49:08.489363Z", "level": "info"}
+{"request_id": "35cb4c7f-e00f-45be-adec-5bc4f8a1efe0", "path": "/logs", "method": "POST", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T22:49:52.970566Z", "level": "info"}
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-02T22:49:52.975565Z"}
+{"request_id": "2e19e367-e469-4c8d-8b84-ad345a6533a2", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T22:49:52.975565Z", "level": "info"}
+{"request_id": "b5304eb5-9a17-4215-a404-e4934a535a55", "path": "/levels", "method": "GET", "status_code": 404, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T23:44:12.897374Z", "level": "info"}
+{"request_id": "45c664be-ca5b-47e7-8b7f-4f4574064e21", "path": "/logs/levels", "method": "GET", "error": "'str' object has no attribute 'read'", "exc_info": true, "event": "request failed", "timestamp": "2026-02-02T23:44:25.783129Z", "level": "error"}
+{"path": "/logs/levels", "error": "'str' object has no attribute 'read'", "exc_info": true, "event": "unhandled exception", "timestamp": "2026-02-02T23:44:25.783129Z", "level": "error"}
+{"request_id": "de0c3272-e62b-4fcb-ad2a-ea969dd5a81b", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T23:44:48.983897Z", "level": "info"}
+{"request_id": "524fa2ad-2bcf-41eb-a7ac-51e105ff0a30", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 4, "event": "request_end", "timestamp": "2026-02-02T23:44:55.903200Z", "level": "info"}
+{"request_id": "a590c099-af07-4dd8-b528-400d1e8a8160", "path": "/logs/events", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T23:45:11.172610Z", "level": "info"}

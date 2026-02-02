@@ -1,24 +1,46 @@
 import logging
 import sys
-from structlog import configure, get_logger, processors, stdlib
+from logging.handlers import RotatingFileHandler
+import structlog
 
-def setup_logging(log_level: str = "INFO"):
+def setup_logging(log_level: str = "INFO",
+                  log_file: str = "logs/app.log.jsonl",):
+    
     logging.basicConfig(
-        format="%(message)s", 
-        stream=sys.stdout,
         level=getattr(logging, log_level.upper(), logging.INFO),
+        handlers=[],
     )
 
-    configure(
+    root_logger = logging.getLogger()
+    root_logger.handlers.clear()
+
+    # console handler
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(logging.Formatter("%(message)s"))
+
+    # rotating file handler
+    file_handler = RotatingFileHandler(
+        filename=log_file,
+        maxBytes=10 * 1024 * 1024,
+        backupCount=5,
+        encoding="utf-8",
+    )
+    file_handler.setFormatter(logging.Formatter("%(message)s"))
+
+    root_logger.addHandler(console_handler)
+    root_logger.addHandler(file_handler)
+    root_logger.setLevel(log_level)
+
+    structlog.configure(
         processors=[
-            stdlib.filter_by_level,
-            processors.TimeStamper(fmt="iso"),
-            processors.JSONRenderer(),
+            structlog.contextvars.merge_contextvars,
+            structlog.processors.TimeStamper(fmt="iso"),
+            structlog.processors.add_log_level,
+            structlog.processors.JSONRenderer(),
         ],
-        logger_factory=stdlib.LoggerFactory(),
-        wrapper_class=stdlib.BoundLogger,
+        logger_factory=structlog.stdlib.LoggerFactory(),
+        wrapper_class=structlog.stdlib.BoundLogger,
         cache_logger_on_first_use=True,
     )
 
-
-logger = get_logger()
+logger = structlog.get_logger()
