@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "log-analyzeri"
+version = "0.1.0"
+description = "a tool to analyze logs"
+authors = ["weistor1016 <wli14pcs@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "app" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+fastapi = "^0.128.0"
+uvicorn = "^0.40.0"
+structlog = "^25.5.0"
+pydantic-settings = "^2.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+pytest-asyncio = "^1.3.0"
+httpx = "^0.28.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
