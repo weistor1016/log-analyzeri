@@ -16,3 +16,165 @@
 {"request_id": "de0c3272-e62b-4fcb-ad2a-ea969dd5a81b", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-02T23:44:48.983897Z", "level": "info"}
 {"request_id": "524fa2ad-2bcf-41eb-a7ac-51e105ff0a30", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 4, "event": "request_end", "timestamp": "2026-02-02T23:44:55.903200Z", "level": "info"}
 {"request_id": "a590c099-af07-4dd8-b528-400d1e8a8160", "path": "/logs/events", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-02T23:45:11.172610Z", "level": "info"}
+{"event": "health check", "timestamp": "2026-02-03T22:06:46.881637Z", "level": "info"}
+{"request_id": "877161b6-ee80-463e-8a5a-39f723270875", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 5, "event": "request_end", "timestamp": "2026-02-03T22:06:46.881637Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:06:46.967631Z"}
+{"request_id": "2a8b4d46-983f-4e3d-9ab7-ad7204d5093c", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 7, "event": "request_end", "timestamp": "2026-02-03T22:06:46.967631Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:06:46.969631Z", "level": "warning"}
+{"request_id": "125395b3-7969-4a89-981e-48501e88bfa6", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:06:46.969631Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:19:16.519949Z", "level": "info"}
+{"request_id": "153016c8-7a21-4b10-bf9a-0239cc3e4917", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:19:16.519949Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:19:16.650941Z"}
+{"request_id": "6e438dc2-a9c4-4bb0-b4f9-76b01203f437", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:19:16.650941Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:19:16.652940Z", "level": "warning"}
+{"request_id": "c5b70702-1bc5-45a6-8996-4ed0fd7103dd", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:19:16.652940Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:21:06.029704Z", "level": "info"}
+{"request_id": "42f116d9-a6d8-4992-87f7-27f9c85ffe0c", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:21:06.029704Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:21:06.155103Z"}
+{"request_id": "0c1e2c2c-7983-4add-bc2b-54b7bf9ec55c", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:21:06.155103Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:21:06.158103Z", "level": "warning"}
+{"request_id": "a29f775d-540a-40f5-b21c-538fdbe048ed", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:21:06.158103Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:23:18.032825Z", "level": "info"}
+{"request_id": "2ea8b90b-998a-4fc4-924a-7c9cdb5fa539", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:23:18.032825Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:23:18.158326Z"}
+{"request_id": "77224d7d-4812-4776-b4a7-7ba108ef3ff0", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:23:18.158326Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:23:18.161325Z", "level": "warning"}
+{"request_id": "3d448d6b-9b48-4bec-a4c6-2829393beeab", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:23:18.161325Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:26:01.621054Z", "level": "info"}
+{"request_id": "a19e0629-652d-4fb9-b484-28463144dac6", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.621054Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "87f77cbe-d4bc-4ef8-bec1-2d0d6ff41f13", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.627055Z", "level": "info"}
+HTTP Request: GET http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "7fef78b8-4b78-46f4-bbab-451a5f33ce1f", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.683052Z", "level": "info"}
+HTTP Request: GET http://test/logs?level=ERROR "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "82434def-bc7f-4a3e-82f1-fb69bf193058", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.727048Z", "level": "info"}
+HTTP Request: GET http://test/logs?limit=1 "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "db3ad4be-8605-4280-91e1-ec2ca2410ce9", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 13, "event": "request_end", "timestamp": "2026-02-03T22:26:01.758047Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "5d9e55be-05dd-4a90-b971-986b6dd028d6", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:26:01.763048Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "09b15f47-1142-462f-a56a-2d4180531497", "path": "/logs", "method": "DELETE", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.766047Z", "level": "info"}
+HTTP Request: DELETE http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:26:01.771046Z"}
+{"request_id": "7793c02c-c58a-4a3d-ba20-7e65ebfa62d8", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.771046Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:26:01.774046Z", "level": "warning"}
+{"request_id": "46d7ae07-97dc-4c82-b980-65f911e86770", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:26:01.774046Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:30:36.029516Z", "level": "info"}
+{"request_id": "cdfbc8dd-c178-4f44-b5ea-63596d1a42a4", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.029516Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "9a553d7c-71e2-44aa-8712-d4abf58d9a45", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.035518Z", "level": "info"}
+HTTP Request: GET http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "20c89b27-c832-4a01-a11e-2c4c97c8b33a", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.091514Z", "level": "info"}
+HTTP Request: GET http://test/logs?level=ERROR "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "2cfb8a02-e0da-40a5-bc97-9119c37af83e", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.110513Z", "level": "info"}
+HTTP Request: GET http://test/logs?limit=1 "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "a7aee9ce-761a-4fdc-bc1f-a8641d0a29c4", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.129511Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "a4d597f6-d77a-4fab-b68c-9bb313e0b8ea", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.133511Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "a8188165-3686-4c80-8483-07b9682053d4", "path": "/logs/", "method": "DELETE", "status_code": 204, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.137511Z", "level": "info"}
+HTTP Request: DELETE http://test/logs/ "HTTP/1.1 204 No Content"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:30:36.139512Z"}
+{"request_id": "c856f070-62a4-41ac-bacc-04a319e4d7bd", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.139512Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:30:36.142510Z", "level": "warning"}
+{"request_id": "f5abf88f-d728-40d1-9f87-52fe1a31edea", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:36.142510Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:30:53.303009Z", "level": "info"}
+{"request_id": "5160f33f-e336-4935-b96e-e0ddbd96d165", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.303009Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "9d71e712-f762-4204-b08f-afbc576c4877", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.309008Z", "level": "info"}
+HTTP Request: GET http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "e3f5ba07-7217-49c6-9886-cd1b28b1b140", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.364006Z", "level": "info"}
+HTTP Request: GET http://test/logs?level=ERROR "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "8305becc-0494-40be-b058-b38c37a7243e", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.384005Z", "level": "info"}
+HTTP Request: GET http://test/logs?limit=1 "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "813261f4-9483-40e7-ac40-d64d1ea70664", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:30:53.403004Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "0a8a0881-6ac1-4ddb-a097-717a5218e246", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:30:53.408004Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "79f5f895-b180-4d5c-9349-df2fca3c6d56", "path": "/logs", "method": "DELETE", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.411003Z", "level": "info"}
+HTTP Request: DELETE http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:30:53.416003Z"}
+{"request_id": "b334784d-0385-4ba9-ae27-11afdabfecb5", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.416003Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:30:53.419003Z", "level": "warning"}
+{"request_id": "30fb6796-3e11-4b6c-875e-d9d961af4536", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:30:53.419003Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:31:29.901392Z", "level": "info"}
+{"request_id": "831b3230-7b99-4a82-abb3-ff7a8b96adc5", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:31:29.902392Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "3b07aca7-987f-439f-b0f8-cbc4731379bc", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:31:29.907391Z", "level": "info"}
+HTTP Request: GET http://test/logs "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "72b27413-f33c-4ae0-9279-3aa65335e4b7", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:31:29.962059Z", "level": "info"}
+HTTP Request: GET http://test/logs?level=ERROR "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "06975c85-7c8c-4756-9828-a23bacb4a52d", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:31:29.981059Z", "level": "info"}
+HTTP Request: GET http://test/logs?limit=1 "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "579f67f6-5692-4c4e-a1d3-1e5c2ae76d39", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:31:29.999056Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "e532777e-6667-4452-a4a2-711d26a9d7e3", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:31:30.004056Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "de5b4db5-4b1a-416b-bde0-0742dcaccd2c", "path": "/logs/", "method": "DELETE", "status_code": 204, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:31:30.007056Z", "level": "info"}
+HTTP Request: DELETE http://test/logs/ "HTTP/1.1 204 No Content"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:31:30.010057Z"}
+{"request_id": "be3511e6-1af7-4472-8d2f-78b0f3edc566", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:31:30.010057Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:31:30.013057Z", "level": "warning"}
+{"request_id": "01274277-f52e-4850-84a4-91f91386a876", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:31:30.013057Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:32:12.468571Z", "level": "info"}
+{"request_id": "36c7c57c-39d7-46ea-abc0-66840b03ad4d", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:12.468571Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "a94fbf64-cae9-49fb-93cf-a054cd1234e4", "path": "/logs/", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:12.475570Z", "level": "info"}
+HTTP Request: GET http://test/logs/ "HTTP/1.1 200 OK"
+{"request_id": "529a65a2-2afa-4ea5-a27d-885f1c760b0f", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:12.479571Z", "level": "info"}
+HTTP Request: GET http://test/logs?level=ERROR "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "540c7ece-37d0-4127-b48e-0879cd008dd7", "path": "/logs", "method": "GET", "status_code": 307, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:12.546567Z", "level": "info"}
+HTTP Request: GET http://test/logs?limit=1 "HTTP/1.1 307 Temporary Redirect"
+{"request_id": "5435ec8f-9b9b-46cc-9ebf-2a867fb2d485", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:12.564567Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "c14d152a-bab5-4f0d-8b9d-a5badead524d", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:12.568568Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "63f8f54b-8305-4471-bb7e-7e41b32f95f1", "path": "/logs/", "method": "DELETE", "status_code": 204, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:12.572566Z", "level": "info"}
+HTTP Request: DELETE http://test/logs/ "HTTP/1.1 204 No Content"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:32:12.575567Z"}
+{"request_id": "82b8fbbf-13d1-4c38-b3e3-4c934fb6c5f3", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:12.575567Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:32:12.577566Z", "level": "warning"}
+{"request_id": "b5795307-a813-40fd-97d2-cd468df18bee", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:12.578565Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
+{"event": "health check", "timestamp": "2026-02-03T22:32:48.034533Z", "level": "info"}
+{"request_id": "2b3c3fcb-f219-4ecb-8e72-559b9ad32ddb", "path": "/health", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.034533Z", "level": "info"}
+HTTP Request: GET http://test/health "HTTP/1.1 200 OK"
+{"request_id": "073989ef-2d1a-4f45-8528-c15c496cc0a0", "path": "/logs/", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.041532Z", "level": "info"}
+HTTP Request: GET http://test/logs/ "HTTP/1.1 200 OK"
+{"request_id": "97cfe15c-fa47-4bed-8a17-16cecabfd1e2", "path": "/logs/", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.046532Z", "level": "info"}
+HTTP Request: GET http://test/logs/?level=ERROR "HTTP/1.1 200 OK"
+{"request_id": "8856ef5b-3af8-42e9-9ac0-e146450bc124", "path": "/logs/", "method": "GET", "status_code": 200, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:48.051532Z", "level": "info"}
+HTTP Request: GET http://test/logs/?limit=1 "HTTP/1.1 200 OK"
+{"request_id": "cafcd775-e756-45c3-9164-a47d9afd688c", "path": "/logs/levels", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.056531Z", "level": "info"}
+HTTP Request: GET http://test/logs/levels "HTTP/1.1 200 OK"
+{"request_id": "1110b363-7532-46f1-995e-bb34d4a4aae2", "path": "/logs/services", "method": "GET", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.060531Z", "level": "info"}
+HTTP Request: GET http://test/logs/services "HTTP/1.1 200 OK"
+{"request_id": "ac7be343-b0ac-4866-82c8-667c40a32c18", "path": "/logs/", "method": "DELETE", "status_code": 204, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.064531Z", "level": "info"}
+HTTP Request: DELETE http://test/logs/ "HTTP/1.1 204 No Content"
+{"service": "auth", "event": "log_ingested", "user_id": null, "request_id": null, "message": "User logged in", "level": "info", "timestamp": "2026-02-03T22:32:48.067531Z"}
+{"request_id": "3dd66381-1436-4c35-99ae-1d5ce0062d4f", "path": "/logs/", "method": "POST", "status_code": 200, "duration_ms": 0, "event": "request_end", "timestamp": "2026-02-03T22:32:48.067531Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 200 OK"
+{"service": "auth", "event": "invalid_log_level", "user_id": null, "request_id": null, "received_level": "INVALID", "timestamp": "2026-02-03T22:32:48.070531Z", "level": "warning"}
+{"request_id": "46752e55-2a65-43e2-8d5b-e730c397516e", "path": "/logs/", "method": "POST", "status_code": 400, "duration_ms": 1, "event": "request_end", "timestamp": "2026-02-03T22:32:48.070531Z", "level": "info"}
+HTTP Request: POST http://test/logs/ "HTTP/1.1 400 Bad Request"
